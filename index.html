@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Campsites</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nucamp</a>
+      <div class="col-12 col-md-4 col-xl-2 offset-md-8 offset-xl-6 mt-4 mt-md-0">
+        <a href="#reserveForm" class="btn btn-info btn-lg btn-block">Reserve Campsite</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Featured Campsites Section -->
+    <section id="feature" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">React Lake Campground</h3>
+                <p class="card-text">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <div>
+              <img src="./image.jpg" alt="React Lake Campground" class="img-thumbnail mr-md-3 mb-3 mb-md-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Form Section -->
+    <section class="row row-content">
+      <div class="col-md-9 mx-auto">
+        <div class="card">
+          <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+          <div class="card-body">
+            <form id="reserveForm">
+              <div class="row mb-3">
+                <label for="numberOfCampers" class="col-form-label col-12 col-sm-3">Number of Campers</label>
+                <div class="col-12 col-sm-9">
+                  <select class="form-control" id="numberOfCampers" name="numberOfCampers">
+                    <option>Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="date" class="col-form-label col-12 col-sm-3">Date</label>
+                <div class="col-12 col-sm-9">
+                  <input type="date" class="form-control" id="date" name="date" placeholder="Select Date">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
